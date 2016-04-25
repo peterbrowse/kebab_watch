@@ -35,11 +35,11 @@ if ('production' == app.get('env')) {
 }
 
 app.get('/', function (req, res) {
-  	res.render('index', {
+	res.render('index', {
 		title: 'Kebab Watch'
 	});
 });
 
 var listener = app.listen(8080, function () {
-  console.log('Example app listening on port ' + listener.address().port + '!');
+	console.log('Example app listening on port ' + listener.address().port + ' in ' + process.env.NODE_ENV + ' mode.');
 });
