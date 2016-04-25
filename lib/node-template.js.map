@@ -1,1 +1,0 @@
-{"version":3,"sources":["../src/node-template.js"],"names":[],"mappings":";;;;;;;;;;;;IAAqB,Y;;;;kBAAA,Y","file":"node-template.js","sourcesContent":["export default class NodeTemplate {\n  \n}\n"]}
