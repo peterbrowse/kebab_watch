@@ -26,7 +26,10 @@
   "dependencies": {
 	"express": "4.x",
 	"node-sass": "3.5.x",
-	"jade": "1.11.x"
+	"node-sass-middleware": "0.9.x",
+	"jade": "1.11.x",
+	"errorhandler": "1.4.x",
+	"morgan": "1.7.x"
   },
   "domains": [
     "kebab.watch"
