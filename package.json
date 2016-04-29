@@ -29,7 +29,8 @@
 	"node-sass-middleware": "0.9.x",
 	"jade": "1.11.x",
 	"errorhandler": "1.4.x",
-	"morgan": "1.7.x"
+	"morgan": "1.7.x",
+	"speedtest-net": "1.2.x"
   },
   "domains": [
     "kebab.watch"

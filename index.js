@@ -3,7 +3,8 @@ var express 		= require('express')
 ,	sass			= require('node-sass')
 ,   sassMiddleware	= require('node-sass-middleware')
 ,	errorhandler	= require('errorhandler')
-,	morgan 			= require('morgan');
+,	morgan 			= require('morgan')
+,	speedTest		= require('speedtest-net');
 
 var app = express();
 
@@ -42,4 +43,14 @@ app.get('/', function (req, res) {
 
 var listener = app.listen(8080, function () {
 	console.log('Example app listening on port ' + listener.address().port + ' in ' + process.env.NODE_ENV + ' mode.');
+});
+
+test = speedTest({maxTime: 5000});
+ 
+test.on('data', function(data) {
+  console.dir(data);
+});
+ 
+test.on('error', function(err) {
+  console.error(err);
 });
