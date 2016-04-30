@@ -7,7 +7,8 @@ var url = "http://d3u3pil9o8kwzq.cloudfront.net/kebab_meat.jpg",
 function InitiateSpeedDetection() {
     console.log("Test Started...");
     test_started = true;
-    window.setTimeout(MeasureConnectionSpeed, 1);
+    //window.setTimeout(MeasureConnectionSpeed, 1);
+    MeasureConnectionSpeed();
 };    
 
 if (window.addEventListener) {

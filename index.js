@@ -1,16 +1,15 @@
 var express 		= require('express')
-,	jade			= require('jade')
+,	pug				= require('pug')
 ,	sass			= require('node-sass')
 ,   sassMiddleware	= require('node-sass-middleware')
 ,	errorhandler	= require('errorhandler')
-,	morgan 			= require('morgan')
-,	speedTest		= require('speedtest-net');
+,	morgan 			= require('morgan');
 
 var app = express();
 
 if ('development' == app.get('env')) {
 	app.set('views', __dirname + '/views');
-	app.set('view engine', 'jade');
+	app.set('view engine', 'pug');
 	app.use(sassMiddleware({
 		src: __dirname + '/sass',
 		dest: __dirname + '/public',
@@ -24,7 +23,7 @@ if ('development' == app.get('env')) {
 
 if ('production' == app.get('env')) {
 	app.set('views', __dirname + '/views');
-	app.set('view engine', 'jade');
+	app.set('view engine', 'pug');
 	app.use(sassMiddleware({
 		src: __dirname + '/sass',
 		dest: __dirname + '/public',
@@ -43,14 +42,4 @@ app.get('/', function (req, res) {
 
 var listener = app.listen(8080, function () {
 	console.log('Example app listening on port ' + listener.address().port + ' in ' + process.env.NODE_ENV + ' mode.');
-});
-
-test = speedTest({maxTime: 5000});
- 
-test.on('data', function(data) {
-  console.dir(data);
-});
- 
-test.on('error', function(err) {
-  console.error(err);
 });

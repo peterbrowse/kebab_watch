@@ -13,8 +13,7 @@
   "author": "Peter Browse",
   "license": "MIT",
   "engines": {
-    "node": "0.12.x",
-    "npm": "2.1.x"
+    "node": "4.1.1"
   },
   "config": {
     "port": "8080"
@@ -27,10 +26,9 @@
 	"express": "4.x",
 	"node-sass": "3.5.x",
 	"node-sass-middleware": "0.9.x",
-	"jade": "1.11.x",
+	"pug": "2.0.0-alpha6",
 	"errorhandler": "1.4.x",
-	"morgan": "1.7.x",
-	"speedtest-net": "1.2.x"
+	"morgan": "1.7.x"
   },
   "domains": [
     "kebab.watch"
