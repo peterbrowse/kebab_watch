@@ -4,8 +4,11 @@ html
 		title= title
 		link(rel='stylesheet', href='/stylesheets/style.css')
 		include html5shiv
+		script(type="text/javascript",src="/js/plugins/three.min.js")
+		script(type="text/javascript",src="/js/plugins/DDSLoader.js")
+		script(type="text/javascript",src="/js/plugins/MTLLoader.js")
+		script(type="text/javascript",src="/js/plugins/OBJLoader.js")
 		script(type="text/javascript",src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js")
 		script(type="text/javascript",src="/js/plugins/speedCheckv2.js")
 		script(type="text/javascript",src="/js/application.js")
 	body
-		block content

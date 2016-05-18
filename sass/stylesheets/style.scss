@@ -3,7 +3,7 @@ $second-color: #8d8d8d;
 $third-color: #e5e5e5;
 $forth-color: #ffffff;
 
-$outter-spacing: 20px;
+$outter-spacing: 0px;
 
 @import 'reset';
 
@@ -12,13 +12,15 @@ html, body {
 }
 
 .content {
-	background-color: $third-color;
+	width: 100%;
+	height: 100%;
 	position: absolute;
 	bottom: 0;
 	top: 0;
 	left: 0;
 	right: 0;
-	margin: $outter-spacing;
+	overflow: hidden;
+	background-color: $second-color;
 }
 
 .content-inner {

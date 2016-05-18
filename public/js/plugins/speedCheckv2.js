@@ -1,11 +1,14 @@
 var url = "http://d3u3pil9o8kwzq.cloudfront.net/kebab_meat.jpg",
-    fileSize = 413773,
+    fileSize = 1047977,
 	test_started = false,
     test_finished = true,
-	num_of_tests = 5,
+	num_of_tests = 10,
     internet_speed = 0,
     downloads = [],
-    debug = false;
+    debug = true;
+    
+//url = "http://d3u3pil9o8kwzq.cloudfront.net/kebab_load.jpg";
+//413773
     
 
 function checkSpeed(callback) {
